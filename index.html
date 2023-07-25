@@ -11,18 +11,62 @@
       margin: 0 auto;
       padding: 20px;
       line-height: 1.5;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     }
 
-    p, li {
-      font-family: Georgia;
+    h1 {
+      margin: 1em 0 0;
+    }
+    header > p {
+      margin: 0.75em 0 0;
     }
 
-    h2, ul {
+    ul {
       margin: 0;
     }
 
     li {
-      margin-bottom: 0.5em;
+      margin: 0.7em 0 0;
+    }
+
+    li li {
+      margin: 0.25em 0 0;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      line-height: 1;
+    }
+
+    h2 {
+      font-size: 1em;
+      line-height: 1;
+      font-weight: normal;
+      margin: 2.5em 0 .75em;
+    }
+
+    h2::after {
+      content: ":";
+    }
+
+    footer {
+      margin: 3em 0 4em;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    footer li {
+      display: inline-block;
+      margin-top: 0;
+    }
+
+    footer li:not(:last-child)::after {
+      content: "·";
+      margin: 0 0.5em;
     }
   </style>
 </head>
@@ -30,44 +74,55 @@
 <body>
 
   <main>
-    <h2>Callum Locke</h2>
+    <header>
+      <h1>Callum Locke</h1>
+      <p>Digital product maker</p>
+    </header>
 
-    <p>Product engineer</p>
-
-    <p>About me:</p>
+    <h2>About me</h2>
     <ul>
-      <li>Grew up and live in London, UK.</li>
+      <li>Grew up in London, UK.</li>
       <li>
-        Made the open source <a
+        Created and still maintain the open source <a
           href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en">JSON
-          Formatter</a> Chrome extension, and maintained 2011–present.
+          Formatter</a> extension for Chrome.
+        <ul>
+          <li>Grown from zero to 2 million weekly users since 2011.</li>
+        </ul>
       </li>
 
-      <li>Worked on interactive news stories, 2012-2017 (<a
-          href="https://www.ft.com/callum-locke">ft.com/callum-locke</a>). Now mostly freelance web development.</li>
-        
-      <li>~20 years designing and coding for the Web platform.</li>
+      <li>Worked at FT on data journalism, 2012-2017.
+        <ul>
+          <li><a href="https://www.ft.com/callum-locke">ft.com/callum-locke</a></li>
+        </ul>
+      </li>
+      <li>About 20 years messing with browsers so far. These days I mostly do freelance web projects and open source work.
+        Right now I'm designing an app for creatively building timelines.</li>
     </ul>
 
-    <p>Interested in working on:</p>
+    <h2>Interested in working on</h2>
     <ul>
-      <li>UIs for AIs</li>
-      <li>UIs that make complex info manageable</li>
-      <li>Tools that help people engineer things (NoCode etc.)</li>
-      <li>Projects involving interesting languages to solve interesting problems.</li>
-      <li>Data journalism, interactive visualisations etc.</li>
+      <li>UIs that turn LLMs into more flexible thinking tools</li>
+      <li>UIs that need to tame complex info without reducing detail</li>
+      <li>Tools that bring Turing’s universality to non-coders</li>
+      <li>
+        Interactive visualisations and other tools for self-directed learning, where users can answer their own
+        questions in their own order</li>
+      <li>Interesting/hard problems and thinking from first principles</li>
     </ul>
 
-    <p>You can email me at callum@playpause.uk</p>
+    <footer>
+      <p>You can email me at callum@playpause.uk</p>
 
-    <ul>
-      <li>
-        <a href="https://github.com/callumlocke">GitHub</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/callumlocke">Twitter</a>
-      </li>
-    </ul>
+      <ul>
+        <li>
+          <a href="https://github.com/callumlocke">GitHub</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/callumlocke">Twitter</a>
+        </li>
+      </ul>
+    </footer>
   </main>
 </body>
 
